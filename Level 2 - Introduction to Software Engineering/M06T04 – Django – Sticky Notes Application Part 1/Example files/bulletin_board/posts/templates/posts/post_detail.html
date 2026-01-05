@@ -1,0 +1,19 @@
+<!-- posts/templates/posts/post_detail.html -->
+{% extends 'base.html' %}
+{% block title %}
+  Bulletin Board - {{ post.title }}
+{% endblock %}
+{% block content %}
+  <h2>
+    {{ post.title }}
+  </h2>
+  <p>
+    {{ post.content }}
+  </p>
+  <p>
+    Created at: {{ post.created_at }}
+  </p>
+  <a href="{% url 'post_update' pk=post.pk %}">Update Post</a>
+  <a href="{% url 'post_delete' pk=post.pk %}">Delete Post</a>
+  <a href="{% url 'post_list' %}">Back to Post List</a>
+{% endblock %}

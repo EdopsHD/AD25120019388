@@ -1,0 +1,33 @@
+<!-- posts/templates/base.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {% block title %}
+        Bulletin Board
+      {% endblock title %}
+    </title>
+    <!-- Add your CSS links or stylesheets here -->
+    <link rel="stylesheet" href="{% static 'posts/styles.css' %}" />
+  </head>
+  <body>
+    <header>
+      <h1>
+           {% block header %}
+          Bulletin Board
+        {% endblock header %}
+      </h1>
+      <!-- Add navigation links or other header content here -->
+    </header>
+    <main>
+      {% block content %}
+      {% endblock content %}
+    </main>
+    <footer>
+      <!-- Add footer content or links here -->
+    </footer>
+  </body>
+</html>
