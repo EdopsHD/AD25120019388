@@ -1,0 +1,31 @@
+1)
+do
+	message "enter a positive number"
+	get positive_number
+	store positive_number in list
+while positive_number is not 0
+
+set LargestNumber to largest number in list 
+message LargestNumber 
+
+2)
+message "enter your name"
+set First_name
+message First_name and add "Hello, World" to the end of the string
+
+
+3)
+while
+	increment number_of_inputs 
+	take totalsum and add inputNumber
+	average equals totalsum divided by numberofinputs
+	
+4)
+foreach item in grocery_list sortby alphabetical order
+	message item if item is left to buy
+	
+5)
+read X, X
+S equals X plus X
+A equals A divided by 2
+P equals X multiplied by Y
